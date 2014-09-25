@@ -1,5 +1,5 @@
 {
-  "name": "ulrikkold/acoaching",
+  "name": "ulrikkold/AninguaqCoachingDk",
   "type": "typo3-flow-site",
   "description": "Add description here",
   "license": "GPL-3.0+",
@@ -9,7 +9,6 @@
       "email": "kontakt@ulrikkold.dk"
     }
   ],
-  "minimum-stability": "dev",
   "require": {
     "typo3/neos": "*",
     "typo3/neos-nodetypes": "*"
