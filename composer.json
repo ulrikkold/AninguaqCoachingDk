@@ -1,14 +1,22 @@
 {
-    "name": "ulrikkold/acoaching",
-    "type": "typo3-flow-site",
-    "description": "Add description here",
-    "require": {
-        "typo3/neos": "*",
-        "typo3/neos-nodetypes": "*"
-    },
-    "autoload": {
-        "psr-0": {
-            "ulrikkold\\acoaching": "Classes"
-        }
+  "name": "ulrikkold/acoaching",
+  "type": "typo3-flow-site",
+  "description": "Add description here",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Ulrik Høyer Kold",
+      "email": "kontakt@ulrikkold.dk"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "typo3/neos": "*",
+    "typo3/neos-nodetypes": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "ulrikkold\\acoaching": "Classes"
+    }
+  }
 }
