@@ -1,20 +1,14 @@
 {
-  "name": "ulrikkold/AninguaqCoachingDk",
-  "type": "typo3-flow-site",
-  "description": "Add description here",
-  "license": "GPL-3.0+",
-  "authors": [
-    {
-      "name": "Ulrik Høyer Kold",
-      "email": "kontakt@ulrikkold.dk"
+    "name": "ulrikkold/aninguaqcoachingdk",
+    "type": "typo3-flow-site",
+    "description": "Add description here",
+    "require": {
+        "typo3/neos": "*",
+        "typo3/neos-nodetypes": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "UlrikKold\\AninguaqCoachingDk": "Classes"
+        }
     }
-  ],
-  "require": {
-    "typo3/neos": "*"
-  },
-  "autoload": {
-    "psr-0": {
-      "ulrikkold\\AninguaqCoachingDk": "Classes"
-    }
-  }
 }

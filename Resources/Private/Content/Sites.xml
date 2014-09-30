@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<site nodeName="acoaching" type="TYPO3.Neos.NodeTypes:Page">
+	<site nodeName="aninguaqcoachingdk" type="TYPO3.Neos.NodeTypes:Page">
 		<properties>
 			<name>Aninguaq Coaching</name>
 			<title><![CDATA[Home]]></title>
 			<state>1</state>
-			<siteResourcesPackageKey>ulrikkold.acoaching</siteResourcesPackageKey>
+			<siteResourcesPackageKey>UlrikKold.AninguaqCoachingDk</siteResourcesPackageKey>
 		</properties>
 		<node type="TYPO3.Neos:ContentCollection" nodeName="main">
 			<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">

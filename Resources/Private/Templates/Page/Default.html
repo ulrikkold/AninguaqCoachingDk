@@ -4,28 +4,13 @@
 <html>
 <head>
 	<f:section name="stylesheets">
-		<!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'TYPO3.Twitter.Bootstrap')}" media="all" />
-
-		<!-- Custom CSS -->
-    <link rel="stylesheet" href="{f:uri.resource(path: 'Styles/acoaching.css', package: 'ulrikkold.acoaching')}" media="all" />
-
-    <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
+		<!-- Put your stylesheet inclusions here, they will be included in your website by TypoScript -->
 	</f:section>
 	<f:section name="headScripts">
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+		<!-- Put your scripts inclusions for the head here, they will be included in your website by TypoScript -->
 	</f:section>
 </head>
 <body>
-{title}
 <f:section name="body">
 	<nav class="menu">
 		{parts.menu -> f:format.raw()}
