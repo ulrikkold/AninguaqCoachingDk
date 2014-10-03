@@ -35,3 +35,20 @@ page = Page {
 		}
 	}
 }
+
+print < page
+print {
+	head {
+		stylesheets.printCss = TYPO3.TypoScript:Tag {
+			@position = 'end 10'
+			tagName = 'link'
+			attributes {
+				media = 'all'
+				rel = 'stylesheet'
+				href = TYPO3.TypoScript:ResourceUri {
+					path = 'resource://TYPO3.NeosDemoTypo3Org/Public/Styles/Print.css'
+				}
+			}
+		}
+	}
+}
