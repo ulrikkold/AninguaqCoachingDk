@@ -1,14 +1,15 @@
+namespace: TypoScript=TYPO3.TypoScript
 /**
  * Root TypoScript template for the Aninguaq Coaching site
  */
 page = Page {
 	head {
-		stylesheets.site = TYPO3.TypoScript:Template {
+		stylesheets.site = TypoScript:Template {
 			templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/Page/Default.html'
 			sectionName = 'stylesheets'
 		}
 
-		javascripts.site = TYPO3.TypoScript:Template {
+		javascripts.site = TypoScript:Template {
 			templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/Page/Default.html'
 			sectionName = 'headScripts'
 		}
@@ -20,6 +21,21 @@ page = Page {
 		parts {
 			menu = Menu
 			breadcrumb = Breadcrumb
+
+			mainMenu = Menu {
+				entryLevel = 1
+				templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/TypoScriptObjects/MainMenu.html'
+				maximumLevels = 3
+				itemCollection = ${q(site).add(q(site).children('[instanceof TYPO3.Neos:Document]')).get()}
+			}
+
+			secondLevelMenu = Menu {
+				entryLevel = 2
+				templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/TypoScriptObjects/SecondLevelMenu.html'
+				maximumLevels = 1
+			}
+
+
 		}
 		// These are your content areas, you can define as many as you want, just name them and the nodePath.
 		content {
@@ -29,7 +45,7 @@ page = Page {
 			}
 		}
 
-		javascripts.site = TYPO3.TypoScript:Template {
+		javascripts.site = TypoScript:Template {
 			templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/Page/Default.html'
 			sectionName = 'bodyScripts'
 		}
@@ -39,13 +55,13 @@ page = Page {
 print < page
 print {
 	head {
-		stylesheets.printCss = TYPO3.TypoScript:Tag {
+		stylesheets.printCss = TypoScript:Tag {
 			@position = 'end 10'
 			tagName = 'link'
 			attributes {
 				media = 'all'
 				rel = 'stylesheet'
-				href = TYPO3.TypoScript:ResourceUri {
+				href = TypoScript:ResourceUri {
 					path = 'resource://TYPO3.NeosDemoTypo3Org/Public/Styles/Print.css'
 				}
 			}
