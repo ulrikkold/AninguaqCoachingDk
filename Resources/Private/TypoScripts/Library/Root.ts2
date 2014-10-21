@@ -1,19 +1,36 @@
+### include: NodeTypes/Carousel.ts2
+
 namespace: TypoScript=TYPO3.TypoScript
 /**
  * Root TypoScript template for the Aninguaq Coaching site
  */
 page = Page {
 	head {
+
+		metadata = TypoScript:Template {
+                    templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/TypoScriptObjects/Metadata.html'
+                    sectionName = 'metadata'
+
+                    metaKeyword = ${q(node).property('metaKeyword')}
+                    metaDescription = ${q(node).property('metaDescription')}
+                    metaAbstract = ${q(node).property('metaAbstract')}
+                    metaAuthor = ${q(node).property('metaAuthor')}
+
+		}
+
 		stylesheets.site = TypoScript:Template {
-			templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/Page/Default.html'
-			sectionName = 'stylesheets'
+                    templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/Page/Default.html'
+                    sectionName = 'stylesheets'
 		}
 
 		javascripts.site = TypoScript:Template {
-			templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/Page/Default.html'
-			sectionName = 'headScripts'
+                    templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/Page/Default.html'
+                    sectionName = 'headScripts'
 		}
 	}
+
+	// This query checks if the second level menu has items and sets an additional class for the body
+	bodyTag.attributes.class = ${q(node).parents().count() >= 1 && q(node).children('[instanceof TYPO3.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : ''}
 
 	body {
 		templatePath = 'resource://UlrikKold.AninguaqCoachingDk/Private/Templates/Page/Default.html'
@@ -40,9 +57,13 @@ page = Page {
 		// These are your content areas, you can define as many as you want, just name them and the nodePath.
 		content {
 			// The default content section
-			main = PrimaryContent {
-				nodePath = 'main'
+			main = ContentCollection {
+                            nodePath = 'main'
 			}
+
+                        titlebox = ContentCollection {
+                            nodePath = 'titlebox'
+                        }
 		}
 
 		javascripts.site = TypoScript:Template {
@@ -68,3 +89,4 @@ print {
 		}
 	}
 }
+

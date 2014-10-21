@@ -8,3 +8,58 @@
 #  childNodes:
 #    sidebar:
 #      type: 'TYPO3.Neos:ContentCollection'
+              
+'TYPO3.Neos.NodeTypes:Page':
+  ui:
+    inspector:
+      groups:
+        metadata:
+          label: 'Metadata'
+          position: 900
+  properties:
+    metaKeyword:
+      type: string
+      ui:
+        label: 'Keywords'
+        reloadIfChanged: FALSE
+        inspector:
+          group: 'metadata'
+    metaDescription:
+      type: string
+      ui:
+        label: 'Description'
+        reloadIfChanged: FALSE
+        inspector:
+          group: 'metadata'
+    metaAbstract:
+      type: string
+      ui:
+        label: 'Abstract'
+        reloadIfChanged: FALSE
+        inspector:
+          group: 'metadata'
+    metaAuthor:
+      type: string
+      ui:
+        label: 'Author'
+        reloadIfChanged: FALSE
+        inspector:
+          group: 'metadata'
+  childNodes:
+    'titlebox':
+      type: 'TYPO3.Neos:ContentCollection'
+    'main':
+      type: 'TYPO3.Neos:ContentCollection'
+
+
+
+'UlrikKold.AninguaqCoachingDk:Carousel':
+  superTypes: ['TYPO3.Neos:Content']
+  childNodes:
+    'carouselItems':
+      type: 'TYPO3.Neos:ContentCollection'
+  ui:
+    label: 'Carousel'
+    group: 'plugins'
+    icon: 'icon-picture'
+    inlineEditable: TRUE
