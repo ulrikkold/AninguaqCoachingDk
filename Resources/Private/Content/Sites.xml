@@ -1,30 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<site nodeName="aninguaqcoachingdk" type="TYPO3.Neos.NodeTypes:Page">
-		<properties>
-			<name>Aninguaq Coaching</name>
-			<title><![CDATA[Home]]></title>
-			<state>1</state>
-			<siteResourcesPackageKey>UlrikKold.AninguaqCoachingDk</siteResourcesPackageKey>
-		</properties>
-		<node type="TYPO3.Neos:ContentCollection" nodeName="main">
-			<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
-				<properties>
-					<text><![CDATA[<p>This is the homepage</p>]]></text>
-				</properties>
-			</node>
-		</node>
-		<node type="TYPO3.Neos.NodeTypes:Page" nodeName="subpage">
-			<properties>
-				<title>A sub page</title>
-			</properties>
-			<node type="TYPO3.Neos:ContentCollection" nodeName="main">
-				<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
-					<properties>
-						<text><![CDATA[<p>This is the first sub page</p>]]></text>
-					</properties>
-				</node>
-			</node>
-		</node>
-	</site>
+ <site name="Aninguaq Coaching" state="1" siteResourcesPackageKey="UlrikKold.AninguaqCoachingDk" siteNodeName="aninguaqcoachingdk">
+  <nodes formatVersion="2.0">
+   <node identifier="60f724b8-9ba7-63e2-3f48-08d873cb316d" nodeName="aninguaqcoachingdk">
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <properties>
+      <name __type="string">Aninguaq Coaching</name>
+      <title __type="string">Home</title>
+      <state __type="string">1</state>
+      <siteResourcesPackageKey __type="string">UlrikKold.AninguaqCoachingDk</siteResourcesPackageKey>
+     </properties>
+    </variant>
+    <node identifier="cc18c94b-cac7-c1ae-e39f-1de5b3485815" nodeName="main">
+     <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <properties/>
+     </variant>
+    </node>
+   </node>
+   <node identifier="d50c0513-ebe5-bd00-f0a6-ea5a4daaefea" nodeName="carouselItems">
+    <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <properties/>
+    </variant>
+   </node>
+   <node identifier="6f09c858-fdc4-e9c5-cc55-a25a553853cd" nodeName="text1">
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <properties>
+      <text __type="string">&lt;p&gt;This is the homepage&lt;/p&gt;</text>
+     </properties>
+    </variant>
+   </node>
+   <node identifier="e2505728-efe5-1f59-61c2-bb954c24b797" nodeName="subpage">
+    <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <properties>
+      <title __type="string">A sub page</title>
+     </properties>
+    </variant>
+    <node identifier="36c3ce47-9855-035d-23f3-1728cc9a60fc" nodeName="main">
+     <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <properties/>
+     </variant>
+     <node identifier="6f45aab1-a46b-cf5c-f8e9-a3f3ee74c740" nodeName="text1">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <properties>
+        <text __type="string">&lt;p&gt;This is the first sub page&lt;/p&gt;</text>
+       </properties>
+      </variant>
+     </node>
+    </node>
+    <node identifier="b6319d03-b727-144c-7aec-7638c1092abc" nodeName="teaser">
+     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <properties/>
+     </variant>
+    </node>
+    <node identifier="6d501fe3-6e1e-5c71-7f88-7eae6e3dd2b8" nodeName="titlebox">
+     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <properties/>
+     </variant>
+    </node>
+   </node>
+   <node identifier="f4e2c2a8-1dd0-a104-bcf3-075c9b94d88a" nodeName="teaser">
+    <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <properties/>
+    </variant>
+   </node>
+   <node identifier="93275b34-19ae-b03e-50e1-0f10c97e1cd9" nodeName="titlebox">
+    <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <properties/>
+    </variant>
+   </node>
+   <node identifier="18cb912c-31da-18bd-4018-39217019876d" nodeName="carouselItems">
+    <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <properties/>
+    </variant>
+   </node>
+  </nodes>
+ </site>
 </root>
